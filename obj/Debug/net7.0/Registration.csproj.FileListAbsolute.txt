@@ -1,0 +1,15 @@
+C:\Users\biino\OneDrive\Documents\dotnet\Registration\bin\Debug\net7.0\Registration.exe
+C:\Users\biino\OneDrive\Documents\dotnet\Registration\bin\Debug\net7.0\Registration.deps.json
+C:\Users\biino\OneDrive\Documents\dotnet\Registration\bin\Debug\net7.0\Registration.runtimeconfig.json
+C:\Users\biino\OneDrive\Documents\dotnet\Registration\bin\Debug\net7.0\Registration.dll
+C:\Users\biino\OneDrive\Documents\dotnet\Registration\bin\Debug\net7.0\Registration.pdb
+C:\Users\biino\OneDrive\Documents\dotnet\Registration\obj\Debug\net7.0\Registration.csproj.AssemblyReference.cache
+C:\Users\biino\OneDrive\Documents\dotnet\Registration\obj\Debug\net7.0\Registration.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\biino\OneDrive\Documents\dotnet\Registration\obj\Debug\net7.0\Registration.AssemblyInfoInputs.cache
+C:\Users\biino\OneDrive\Documents\dotnet\Registration\obj\Debug\net7.0\Registration.AssemblyInfo.cs
+C:\Users\biino\OneDrive\Documents\dotnet\Registration\obj\Debug\net7.0\Registration.csproj.CoreCompileInputs.cache
+C:\Users\biino\OneDrive\Documents\dotnet\Registration\obj\Debug\net7.0\Registration.dll
+C:\Users\biino\OneDrive\Documents\dotnet\Registration\obj\Debug\net7.0\refint\Registration.dll
+C:\Users\biino\OneDrive\Documents\dotnet\Registration\obj\Debug\net7.0\Registration.pdb
+C:\Users\biino\OneDrive\Documents\dotnet\Registration\obj\Debug\net7.0\Registration.genruntimeconfig.cache
+C:\Users\biino\OneDrive\Documents\dotnet\Registration\obj\Debug\net7.0\ref\Registration.dll
