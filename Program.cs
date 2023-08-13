@@ -177,6 +177,22 @@ namespace RegisterLogin
             Course selectedCourse = courses[choice];
             Console.WriteLine("You have selected: " + selectedCourse.Name);
 
+            switch (selectedCourse.Name)
+            {
+                case "C# Full Stack Development":
+                Console.WriteLine($"");
+                    // Logic for C# Full Stack Development course
+                    break;
+                case "JavaScript Full-Stack Development":
+                    // Logic for JavaScript Full-Stack Development course
+                    break;
+                case "QA/QE":
+                    // Logic for QA/QE course
+                    break;
+                case "WordPress Full-Stack Development":
+                    // Logic for WordPress Full-Stack Development course
+                    break;
+            }
 
         }
     }
