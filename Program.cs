@@ -4,31 +4,58 @@ using System.Collections.Generic;
 
 namespace RegisterLogin
 {
-    public enum Course
-    {
-        FullStackDevelopment,
-        JavaScriptFullStackDevelopment,
-        QAQE,
-        WordPressFullStackDevelopment
-    }
-    public class CourseDTO
+    public class Course
     {
         public string Name { get; set; }
         public decimal Price { get; set; }
 
-        public CourseDTO(string name, decimal price)
+        public Course(string name, decimal price)
         {
             Name = name;
             Price = price;
         }
     }
+
+    // public enum Course
+    // {
+    //     C# Full Stack Development,
+    //     JavaScript Full-Stack Development,
+    //     QA/QE,
+    //     WordPress Full-Stack Development
+    // }
+    // public class CourseDTO
+    // {
+    //     public string Name { get; set; }
+    //     public decimal Price { get; set; }
+    //     public Course Course { get; set; }
+
+    //     public CourseDTO()
+    //     {
+    //         Course = Course;
+    //         Price = Price;
+    //     }
+    // }
     class Program
     {
         static string path = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData);
         static string filePath = @"Data\user.txt";
         static Dictionary<string, string> users = new Dictionary<string, string>();
         static Dictionary<string, string> admins = new Dictionary<string, string>();
-        static List<string> courses = new List<string> { "Math", "Science", "History", "English" };
+        static Dictionary<int, Course> courses = new Dictionary<int, Course>
+        {
+            { 1, new Course("C# Full Stack Development", 100) },
+            { 2, new Course("JavaScript Full-Stack Development", 150) },
+            { 3, new Course("QA/QE", 200) },
+            { 4, new Course("WordPress Full-Stack Development", 250) }
+        };
+
+
+        // List<CourseDTO> coursesDTO = new List<CourseDTO>() {
+        //     new CourseDTO() {Name="C# Full Stack Development", Price=40000},
+        //     new CourseDTO() {Name="Javascript Full Stack Development", Price=50000},
+        //     new CourseDTO() {Name="Networking IPV6", Price=10000},
+        //     new CourseDTO() {Name="VueJS Frontend", Price=20000},
+        // };
 
         static void Main(string[] args)
         {
@@ -133,10 +160,24 @@ namespace RegisterLogin
         static void ShowCourses()
         {
             Console.WriteLine("Here is a list of courses you can purchase:");
-            for (int i = 0; i < courses.Count; i++)
+            Console.WriteLine("Please select a course:");
+            // foreach (KeyValuePair<int, string> course in courses)
+            // {
+            //     Console.WriteLine(course.Key + ". " + course.Value);
+            // };
+
+            // int choice = Convert.ToInt32(Console.ReadLine());
+            // string selectedCourse = courses[choice];
+            // Console.WriteLine("You have selected: " + selectedCourse);
+            foreach (KeyValuePair<int, Course> course in courses)
             {
-                Console.WriteLine("Course " + i + "." + courses[i]);
+                Console.WriteLine(course.Key + ". " + course.Value.Name + " - " + course.Value.Price);
             }
+            int choice = Convert.ToInt32(Console.ReadLine());
+            Course selectedCourse = courses[choice];
+            Console.WriteLine("You have selected: " + selectedCourse.Name);
+
+
         }
     }
 }
